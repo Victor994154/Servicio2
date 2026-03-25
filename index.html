@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Dashboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1a1a2e;
+      color: white;
+    }
+    header {
+      background: #16213e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #0f3460;
+    }
+    header h1 { font-size: 28px; color: #e94560; }
+    header p  { color: #aaa; margin-top: 5px; }
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+    iframe {
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: none;
+      width: 1140px;
+      height: 620px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📊 Mi Dashboard</h1>
+    <p>Análisis interactivo de datos</p>
+  </header>
+
+  <div class="container">
+    <!-- PEGA AQUÍ TU IFRAME DE POWER BI -->
+    <iframe
+      title="Mi Reporte"
+      src="PEGA_AQUÍ_EL_LINK_DE_POWER_BI"
+      allowFullScreen="true">
+    </iframe>
+  </div>
+
+  <footer>
+    Creado con Power BI · Victor Yael Méndez
+  </footer>
+
+</body>
+</html>
+```
+
+Cuando tengas el iFrame de Power BI, reemplazas `PEGA_AQUÍ_EL_LINK_DE_POWER_BI` con el `src="..."` que te da Power BI.
+
+---
+
+## 3. Activar GitHub Pages
+
+1. Ve a **Settings** del repositorio
+2. Menú izquierdo → **Pages**
+3. En **Source** selecciona → **Deploy from a branch**
+4. Branch: **main** / carpeta: **/ (root)**
+5. Click **Save**
+
+---
+
+## 4. Tu página queda en:
+```
+https://TU-USUARIO.github.io/mi-dashboard-powerbi
